@@ -1,3 +1,9 @@
+// Fonts
+@font-face {
+  src: url(../fonts/F37_Ginger/F37\ Ginger\ Regular.ttf);
+  font-family: F37_Ginger_Regular;
+}
+
 // Constants
 $mainBG: #fff;
 
@@ -6,5 +12,5 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  border: 1px solid red;
+  font-family: F37_Ginger_Regular;
 }
