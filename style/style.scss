@@ -4,8 +4,21 @@
   font-family: F37_Ginger_Regular;
 }
 
-// Constants
-$mainBG: #fff;
+// <!-- Constants Starts Here --!>
+$mainBG: #ffffff;
+$greenAction: #3eb291;
+$greyishBG: #8d9196;
+$greenCheck: #b5cebf;
+
+$fontRed: #df242b;
+$fontWhite: #ffffff;
+$fontGrey: #495057;
+$fontGreyLight: #7a7a7a;
+$fontGreyLighter: #acb5bd;
+$lightTextOpacity: 0.3;
+
+$largeScreenBreak: 992px;
+// <!-- Constants Ends Here --!>
 
 body {
   background: $mainBG;
