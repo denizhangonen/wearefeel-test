@@ -12,9 +12,9 @@ Below are the task list regarding to the project;
 
 # + Breakdown into smaller tasks
 
-# - Prepare SCSS constants
+# + Prepare SCSS constants
 
-# - Create sections for desktop view
+# + Create sections for desktop view
 
 # - Prepare Header section
 
