@@ -16,7 +16,7 @@ Below are the task list regarding to the project;
 
 # + Create sections for desktop view
 
-# - Prepare Header section
+# + Prepare Header section
 
 # - Prepare Middle-Content section
 
