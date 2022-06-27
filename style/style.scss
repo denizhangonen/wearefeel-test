@@ -17,6 +17,7 @@ $fontGrey: #495057;
 $fontGreyLight: #7a7a7a;
 $fontGreyLighter: #acb5bd;
 $lightTextOpacity: 0.3;
+$listItemsOpacity: 0.6;
 
 $largeScreenBreak: 992px;
 $textPaddingForLargeScreens: 5px;
@@ -28,6 +29,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: F37_Ginger_Regular;
+
+  //TODO : Ask if it is good idea to place line-height and letter spacing here or should I assign them on containers
+  h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 20px;
+  }
 }
 
 .main {
@@ -47,6 +61,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  height: 100vh;
   @media (min-width: $largeScreenBreak) {
     padding: 0 150px;
   }
@@ -61,14 +76,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0 0 0;
 
   & > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // margin-bottom: 30px;
+    margin: 10px 0 20px 0;
     width: 100%;
 
     // Large devices (desktops, 992px and up)
@@ -89,7 +104,7 @@ body {
   }
   .subtitle-container {
     // Add extra space for large screens
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     @media (min-width: $largeScreenBreak) {
       & > span:nth-child(2) {
         padding-left: $textPaddingForLargeScreens;
@@ -98,7 +113,14 @@ body {
   }
 
   .list-container {
-    & span.iconContainer {
+    opacity: $listItemsOpacity;
+    & span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    & span img {
       margin-right: 20px;
     }
     @media (max-width: $largeScreenBreak) {
