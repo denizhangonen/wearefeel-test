@@ -10,6 +10,7 @@ $greenAction: #3eb291;
 $greyishBG: #8d9196;
 $greenCheck: #b5cebf;
 
+$fontMain: #000000;
 $fontRed: #df242b;
 $fontWhite: #ffffff;
 $fontGrey: #495057;
@@ -18,12 +19,97 @@ $fontGreyLighter: #acb5bd;
 $lightTextOpacity: 0.3;
 
 $largeScreenBreak: 992px;
+$textPaddingForLargeScreens: 5px;
 // <!-- Constants Ends Here --!>
 
 body {
   background: $mainBG;
+  color: $fontMain;
   margin: 0;
   padding: 0;
-  height: 100vh;
   font-family: F37_Ginger_Regular;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  @media (min-width: $largeScreenBreak) {
+    padding: 0 150px;
+  }
+  @media (max-width: $largeScreenBreak) {
+    padding: 0;
+  }
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 30px;
+    width: 100%;
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: $largeScreenBreak) {
+      flex-direction: row;
+    }
+  }
+
+  .title-container {
+    opacity: $lightTextOpacity;
+
+    // Add extra space for large screens
+    @media (min-width: $largeScreenBreak) {
+      & > span:nth-child(2) {
+        padding-left: $textPaddingForLargeScreens;
+      }
+    }
+  }
+  .subtitle-container {
+    // Add extra space for large screens
+    margin-bottom: 20px;
+    @media (min-width: $largeScreenBreak) {
+      & > span:nth-child(2) {
+        padding-left: $textPaddingForLargeScreens;
+      }
+    }
+  }
+
+  .list-container {
+    & span.iconContainer {
+      margin-right: 20px;
+    }
+    @media (max-width: $largeScreenBreak) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    & > div {
+      margin: 0 25px;
+    }
+  }
 }
