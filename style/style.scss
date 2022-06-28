@@ -18,6 +18,8 @@ $fontGreyLight: #7a7a7a;
 $fontGreyLighter: #acb5bd;
 $lightTextOpacity: 0.3;
 $listItemsOpacity: 0.6;
+$underlineColor: #3b2e6b;
+$underlineOpacity: 0.1;
 
 $largeScreenBreak: 992px;
 $textPaddingForLargeScreens: 5px;
@@ -102,7 +104,18 @@ body {
       }
     }
   }
+
   .subtitle-container {
+    & span.underlined_text {
+      background: linear-gradient(
+        to right,
+        rgba(59, 46, 107, $underlineOpacity),
+        rgba(59, 46, 107, $underlineOpacity)
+      );
+      background-size: 100% 8px;
+      background-position: 0 87%;
+      background-repeat: no-repeat;
+    }
     // Add extra space for large screens
     margin-top: 37px;
     @media (min-width: $largeScreenBreak) {

@@ -22,7 +22,7 @@ Below are the task list regarding to the project;
 
 # + Prepare Footer section
 
-# - Apply shadow for Title texts
+# + Apply shadow for Title texts
 
 # - Apply background
 
