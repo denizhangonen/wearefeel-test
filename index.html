@@ -25,7 +25,7 @@
   <body>
     <div class="main">
       <!-- Background gradient container starts here -->
-      <!-- <div class="background-container"></div> -->
+      <div class="background-container"></div>
       <!-- Background gradient container ends here -->
       <div class="page-content">
         <!-- Header container starts here -->
@@ -37,22 +37,21 @@
           <div class="subtitle-container">
             <span><h2>Super Bundle</h2></span>
             <span>
-              <h2>
+              <h3>
                 (<span class="underlined_text">Multi</span>,
                 <span class="underlined_text">Omega</span>,
-                <span class="underlined_text">Beauty</span>
-                )
-              </h2></span
-            >
+                <span class="underlined_text">Beauty</span>)
+              </h3>
+            </span>
           </div>
           <div class="list-container">
-            <div class="d-flex d-lg-none">
+            <div class="d-flex d-lg-none list-container__mobile-item">
               <span class="list-container__icon-container">
                 <img src="./images/li_thumbsUp.svg" />
               </span>
               <span>Amazing value</span>
             </div>
-            <div class="d-flex d-lg-none">
+            <div class="d-flex d-lg-none list-container__mobile-item">
               <span class="list-container__icon-container">
                 <img src="./images/li_cube.svg" />
               </span>
@@ -84,7 +83,10 @@
         <div class="content-container">
           <div class="mobile-media d-flex d-lg-none">
             <div class="mobile-media__image-container">
-              <img src="./images/Group 2991.png" alt="img1" />
+              <img
+                src="./images/Group 2991.svg"
+                alt="Feel Multivitamin | algae omega 3 | beauty probiotic+"
+              />
             </div>
           </div>
           <div class="desktop-media d-none d-lg-flex">
@@ -128,8 +130,23 @@
         <!-- Footer content starts here  -->
         <div class="footer-container">
           <div class="footer-container__advantage-container">
-            <span class="font-size_64">Save £13</span><br />
+            <span class="save-amount">Save £13</span><br />
             <span class="smaller-text">Every month</span>
+          </div>
+
+          <div class="list-for-mobile d-flex d-lg-none">
+            <div class="list-for-mobile__item">
+              <span class="icon">+</span>
+              <span class="item-text">Feel Multivitamin™</span>
+            </div>
+            <div class="list-for-mobile__item">
+              <span class="icon">+</span>
+              <span class="item-text">Feel Algae Omega 3</span>
+            </div>
+            <div class="list-for-mobile__item">
+              <span class="icon">+</span>
+              <span class="item-text">Feel Beauty Probiotic+</span>
+            </div>
           </div>
 
           <!-- Hide separators on smaller screens -->
@@ -141,7 +158,7 @@
             <div class="bundle-price">
               Bundle price:<span class="price-red"> £29.95 </span>
             </div>
-            <div class="bottomText">per month</div>
+            <div class="bottom-text">per month</div>
           </div>
           <div class="footer-container__mobile-save-info d-lg-none">
             YOU WILL SAVE 30% EVERY TIME
@@ -154,13 +171,13 @@
               </button>
             </div>
             <div class="info-container">SHIPPED MONTHLY. EASY TO CANCEL.</div>
+            <br />
+            <br />
           </div>
         </div>
         <!-- Footer content finishes here  -->
       </div>
     </div>
-    <br />
-    <br />
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

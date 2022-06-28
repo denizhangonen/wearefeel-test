@@ -9,11 +9,14 @@ $mainBG: #ffffff;
 $greenAction: #3eb291;
 $greyishBG: #8d9196;
 $greenCheck: #b5cebf;
+$lightGreyishBG: #eaeaea;
 
 $fontMain: #000000;
 $fontRed: #df242b;
+$fontRedDarker: #d1030a;
 $fontWhite: #ffffff;
 $fontGrey: #495057;
+$fontListGrey: #60615d;
 $fontGreyLight: #7a7a7a;
 $fontGreyLighter: #acb5bd;
 $lightTextOpacity: 0.3;
@@ -44,6 +47,25 @@ body {
     font-weight: 700;
     line-height: 20px;
   }
+  h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  @media (max-width: $largeScreenBreak) {
+    h1 {
+      font-size: 35px;
+      line-height: 46px;
+    }
+    h2 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    h3 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
 }
 
 .main {
@@ -64,6 +86,7 @@ body {
   justify-content: flex-start;
   width: 100%;
   height: 100vh;
+
   @media (min-width: $largeScreenBreak) {
     padding: 0 209px;
   }
@@ -80,15 +103,18 @@ body {
   justify-content: center;
   margin: 60px 0 0 0;
 
+  @media (max-width: $largeScreenBreak) {
+    margin: 57px 0 0 0;
+  }
+
   & > div {
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100%;
 
-    // Large devices (desktops, 992px and up)
     @media (min-width: $largeScreenBreak) {
       flex-direction: row;
     }
@@ -96,6 +122,8 @@ body {
 
   .title-container {
     opacity: $lightTextOpacity;
+    height: 92px;
+    height: auto;
 
     // Add extra space for large screens
     @media (min-width: $largeScreenBreak) {
@@ -123,6 +151,9 @@ body {
         padding-left: $textPaddingForLargeScreens;
       }
     }
+    @media (max-width: $largeScreenBreak) {
+      margin-top: 15px;
+    }
   }
 
   .list-container {
@@ -145,6 +176,24 @@ body {
       align-items: flex-start;
     }
 
+    .list-container__mobile-item {
+      color: $fontListGrey;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 15px;
+
+      &:nth-child(1) {
+        margin-bottom: 16.18px;
+      }
+      & > span.list-container__icon-container {
+        width: 80px;
+
+        & > img {
+          margin-left: auto;
+        }
+      }
+    }
+
     & > div {
       margin: 0 25px;
     }
@@ -154,6 +203,9 @@ body {
 .content-container {
   width: 100%;
   margin-top: 52px;
+  @media (max-width: $largeScreenBreak) {
+    margin-top: 29px;
+  }
 
   & div.mobile-media {
     width: 100%;
@@ -214,32 +266,71 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin: 46px 0px 10px 10px;
-  padding-left: 20px;
+  margin: 46px 0px 10px 0px;
+
   height: auto;
+
+  @media (max-width: $largeScreenBreak) {
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+  }
 
   & div.footer-container__advantage-container {
     color: $fontRed;
     font-size: 35px;
     font-weight: bold;
-    & > span.smaller-text {
-      font-size: 28px;
+    text-align: center;
+
+    @media (max-width: $largeScreenBreak) {
+      margin-top: 21px;
+      & > span.save-amount {
+        font-size: 45px;
+        line-height: 40px;
+        font-weight: 400;
+      }
+      & > span.smaller-text {
+        font-size: 26px;
+        line-height: 25px;
+        font-weight: 700;
+      }
     }
   }
   & div.footer-container__price-container {
     position: relative;
-    color: $fontGrey;
+    color: $fontGreyLight;
     font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+
+    & div.total-price {
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: $largeScreenBreak) {
+      margin-top: 35px;
+    }
   }
-  & div.bottomText {
+
+  & div.bottom-text {
     position: absolute;
     bottom: -15px;
     right: 4px;
-    font-size: 10px;
-    color: #7a7a7a;
+    font-size: 15px;
+    line-height: 15px;
+    color: $fontGreyLight;
+    font-weight: 400;
   }
+
+  & div.bundle-price {
+    color: $fontMain;
+  }
+
   & span.price-red {
     color: $fontRed;
+
+    @media (max-width: $largeScreenBreak) {
+      color: $fontRedDarker;
+    }
   }
 
   & div.footer-container__separator {
@@ -253,25 +344,47 @@ body {
     justify-content: center;
     margin-top: 20px;
     margin-left: auto;
+    width: 100%;
+
+    @media (max-width: $largeScreenBreak) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    & div.action-container__button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
 
     & button {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-
-      // padding: 30px 100px;
       border-radius: 100px;
       font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      line-height: 15px;
       background-color: $greenAction;
-      color: white;
+      color: $fontWhite;
       border: none;
       height: 70px;
-      width: 391px;
+      width: 90%;
       cursor: pointer;
 
       & > img {
-        margin-right: 30px;
+        margin-right: 20px;
+      }
+
+      @media (max-width: $largeScreenBreak) {
+        padding: 30px 60px;
       }
     }
 
@@ -284,6 +397,44 @@ body {
       letter-spacing: 2px;
       line-height: 12px;
       font-weight: 700;
+
+      @media (max-width: $largeScreenBreak) {
+        margin-top: 20px;
+      }
+    }
+  }
+  & div.footer-container__mobile-save-info {
+    background-color: $lightGreyishBG;
+    margin: 40px 5px 5px 5px;
+    padding: 13px 15px 13px 15px;
+    text-align: center;
+    color: $fontGreyLight;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    width: 90%;
+  }
+  & div.list-for-mobile {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+
+    // select first 2 elements
+    & div.list-for-mobile__item:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+
+    & span.item-text {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+
+      color: $fontGrey;
+      margin-left: 20px;
     }
   }
 }
@@ -291,4 +442,7 @@ body {
 // additional custom styles
 .margin-left_30 {
   margin-left: 30px;
+}
+.margin-bottom_30 {
+  margin-bottom: 30px;
 }

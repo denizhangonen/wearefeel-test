@@ -26,11 +26,11 @@ Below are the task list regarding to the project;
 
 # - Apply background
 
-# - Create mobile-specific content
+# + Create mobile-specific content
 
-# - Header - Mobile View management
+# + Header - Mobile View management
 
-# - Content/Middle - Mobile View management
+# + Content/Middle - Mobile View management
 
 # - Footer - Mobile View management
 
