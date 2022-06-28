@@ -32,7 +32,7 @@ Below are the task list regarding to the project;
 
 # + Content/Middle - Mobile View management
 
-# - Footer - Mobile View management
+# + Footer - Mobile View management
 
 # - Apply shadow for "Every Month" texts
 
