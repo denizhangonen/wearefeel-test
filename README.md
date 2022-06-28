@@ -4,7 +4,7 @@
 
 Below are the task list regarding to the project;
 
-.+ Create an empty project with bootstrap
+.+ Create an empty project with bootstrap <br />
 .+ Check Figma to have a general overview
 .+ Create a general road-map for the project
 .+ Breakdown into smaller tasks
