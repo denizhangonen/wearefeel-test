@@ -18,9 +18,9 @@ Below are the task list regarding to the project;
 
 # + Prepare Header section
 
-# - Prepare Middle-Content section
+# + Prepare Middle-Content section
 
-# - Prepare Footer section
+# + Prepare Footer section
 
 # - Apply shadow for Title texts
 
