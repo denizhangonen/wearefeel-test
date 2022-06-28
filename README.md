@@ -4,6 +4,7 @@
 
 Below are the task list regarding to the project;
 
+<h6>
 # + Create an empty project with bootstrap
 
 # + Check Figma to have a general overview
@@ -42,4 +43,5 @@ Below are the task list regarding to the project;
 
 # - Final Tests/Review & Deliver
 
+</h6>
 <p align="right">(<a href="#top">back to top</a>)</p>

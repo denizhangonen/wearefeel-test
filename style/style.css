@@ -56,17 +56,21 @@ body h3 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
   height: 100vh;
 }
-@media (min-width: 992px) {
+@media (min-width: 1300px) {
   .page-content {
-    padding: 0 209px;
+    width: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  .page-content {
+    width: 70%;
   }
 }
 @media (max-width: 992px) {
   .page-content {
-    padding: 0;
+    width: 95%;
   }
 }
 
@@ -235,8 +239,16 @@ body h3 {
 .footer-container div.footer-container__advantage-container {
   color: #df242b;
   font-size: 35px;
+  line-height: 40px;
+  font-weight: 400;
   font-weight: bold;
   text-align: center;
+  min-width: 174px;
+}
+.footer-container div.footer-container__advantage-container > span.smaller-text {
+  font-size: 26px;
+  line-height: 25px;
+  font-weight: 700;
 }
 @media (max-width: 992px) {
   .footer-container div.footer-container__advantage-container {
@@ -246,11 +258,6 @@ body h3 {
     font-size: 45px;
     line-height: 40px;
     font-weight: 400;
-  }
-  .footer-container div.footer-container__advantage-container > span.smaller-text {
-    font-size: 26px;
-    line-height: 25px;
-    font-weight: 700;
   }
 }
 .footer-container div.footer-container__price-container {
@@ -298,7 +305,7 @@ body h3 {
   justify-content: center;
   margin-top: 20px;
   margin-left: auto;
-  width: 100%;
+  width: auto;
 }
 @media (max-width: 992px) {
   .footer-container div.footer-container__action-container {
@@ -330,7 +337,7 @@ body h3 {
   color: #ffffff;
   border: none;
   height: 70px;
-  width: 90%;
+  width: 391px;
   cursor: pointer;
 }
 .footer-container div.footer-container__action-container button > img {
@@ -339,6 +346,7 @@ body h3 {
 @media (max-width: 992px) {
   .footer-container div.footer-container__action-container button {
     padding: 30px 60px;
+    width: 90%;
   }
 }
 .footer-container div.footer-container__action-container div.info-container {

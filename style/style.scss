@@ -84,14 +84,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+
   height: 100vh;
 
-  @media (min-width: $largeScreenBreak) {
-    padding: 0 209px;
+  @media (min-width: 1300px) {
+    width: 80%;
+  }
+  @media (min-width: 1400px) {
+    width: 70%;
   }
   @media (max-width: $largeScreenBreak) {
-    padding: 0;
+    width: 95%;
   }
 }
 
@@ -278,8 +281,17 @@ body {
   & div.footer-container__advantage-container {
     color: $fontRed;
     font-size: 35px;
+    line-height: 40px;
+    font-weight: 400;
     font-weight: bold;
     text-align: center;
+    min-width: 174px;
+
+    & > span.smaller-text {
+      font-size: 26px;
+      line-height: 25px;
+      font-weight: 700;
+    }
 
     @media (max-width: $largeScreenBreak) {
       margin-top: 21px;
@@ -287,11 +299,6 @@ body {
         font-size: 45px;
         line-height: 40px;
         font-weight: 400;
-      }
-      & > span.smaller-text {
-        font-size: 26px;
-        line-height: 25px;
-        font-weight: 700;
       }
     }
   }
@@ -344,7 +351,7 @@ body {
     justify-content: center;
     margin-top: 20px;
     margin-left: auto;
-    width: 100%;
+    width: auto;
 
     @media (max-width: $largeScreenBreak) {
       display: flex;
@@ -376,7 +383,8 @@ body {
       color: $fontWhite;
       border: none;
       height: 70px;
-      width: 90%;
+      width: 391px;
+
       cursor: pointer;
 
       & > img {
@@ -385,6 +393,7 @@ body {
 
       @media (max-width: $largeScreenBreak) {
         padding: 30px 60px;
+        width: 90%;
       }
     }
 
