@@ -21,7 +21,7 @@ Below are the task list regarding to the project;
 .+ Footer - Mobile View management<br />
 .+ Apply shadow for "Every Month" texts<br />
 .+ Mobile - Background placement<br />
-.- Polishing<br />
-.- Final Tests/Reviews & Deliver<br />
+.+ Polishing<br />
+.+ Final Tests/Reviews & Deliver<br />
 
 <p align="right">(<a href="#top">back to top</a>)</p>

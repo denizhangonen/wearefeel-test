@@ -123,7 +123,6 @@ body {
     height: 92px;
     height: auto;
 
-    // Add extra space for large screens
     @media (min-width: $largeScreenBreak) {
       > span:nth-child(2) {
         padding-left: $textPaddingForLargeScreens;
@@ -142,7 +141,7 @@ body {
       background-position: 0 87%;
       background-repeat: no-repeat;
     }
-    // Add extra space for large screens
+
     margin-top: 37px;
     @media (min-width: $largeScreenBreak) {
       > span:nth-child(2) {
@@ -252,7 +251,6 @@ body {
     }
   }
 
-  // remove the padding for smaller-shadowed image
   div.padding_0 {
     padding: 0;
   }
