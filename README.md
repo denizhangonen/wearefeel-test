@@ -14,13 +14,13 @@ Below are the task list regarding to the project;
 .+ Prepare Middle-Content section<br />
 .+ Prepare Footer section<br />
 .+ Apply shadow for Title texts<br />
-.- Apply background<br />
+.+ Apply background<br />
 .+ Create mobile-specific content<br />
 .+ Header - Mobile View management<br />
 .+ Content/Middle - Mobile View management<br />
 .+ Footer - Mobile View management<br />
 .+ Apply shadow for "Every Month" texts<br />
-.- Mobile - Background placement<br />
+.+ Mobile - Background placement<br />
 .- Polishing<br />
 .- Final Tests/Reviews & Deliver<br />
 
