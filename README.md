@@ -19,7 +19,7 @@ Below are the task list regarding to the project;
 .+ Header - Mobile View management<br />
 .+ Content/Middle - Mobile View management<br />
 .+ Footer - Mobile View management<br />
-.- Apply shadow for "Every Month" texts<br />
+.+ Apply shadow for "Every Month" texts<br />
 .- Mobile - Background placement<br />
 .- Polishing<br />
 .- Final Tests/Reviews & Deliver<br />

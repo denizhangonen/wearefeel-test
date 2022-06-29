@@ -146,7 +146,14 @@ body h3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+  }
+  .header-container .list-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 .header-container .list-container .list-container__mobile-item {
@@ -183,6 +190,7 @@ body h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: auto;
 }
 .content-container div.desktop-media {
   display: flex;
@@ -234,6 +242,12 @@ body h3 {
   .footer-container {
     flex-direction: column;
     margin: 10px 0 10px 0;
+  }
+  .footer-container span.underlined-text_red {
+    background: linear-gradient(to right, rgba(209, 3, 10, 0.1), rgba(209, 3, 10, 0.1));
+    background-size: 100% 8px;
+    background-position: 0 87%;
+    background-repeat: no-repeat;
   }
 }
 .footer-container div.footer-container__advantage-container {
@@ -347,6 +361,7 @@ body h3 {
   .footer-container div.footer-container__action-container button {
     padding: 30px 60px;
     width: 90%;
+    max-width: 400px;
   }
 }
 .footer-container div.footer-container__action-container div.info-container {
@@ -375,12 +390,13 @@ body h3 {
   line-height: 13px;
   letter-spacing: 2px;
   width: 90%;
+  max-width: 400px;
 }
 .footer-container div.list-for-mobile {
   width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   margin-top: 30px;
 }

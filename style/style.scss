@@ -14,6 +14,7 @@ $lightGreyishBG: #eaeaea;
 $fontMain: #000000;
 $fontRed: #df242b;
 $fontRedDarker: #d1030a;
+$fontRedDarkerRgb: rgb(209, 3, 10);
 $fontWhite: #ffffff;
 $fontGrey: #495057;
 $fontListGrey: #60615d;
@@ -176,7 +177,16 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
+
+      & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+      }
     }
 
     .list-container__mobile-item {
@@ -216,6 +226,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    height: auto;
   }
 
   & div.desktop-media {
@@ -276,6 +288,17 @@ body {
   @media (max-width: $largeScreenBreak) {
     flex-direction: column;
     margin: 10px 0 10px 0;
+
+    span.underlined-text_red {
+      background: linear-gradient(
+        to right,
+        rgba($fontRedDarkerRgb, $underlineOpacity),
+        rgba($fontRedDarkerRgb, $underlineOpacity)
+      );
+      background-size: 100% 8px;
+      background-position: 0 87%;
+      background-repeat: no-repeat;
+    }
   }
 
   & div.footer-container__advantage-container {
@@ -394,6 +417,7 @@ body {
       @media (max-width: $largeScreenBreak) {
         padding: 30px 60px;
         width: 90%;
+        max-width: 400px;
       }
     }
 
@@ -423,12 +447,13 @@ body {
     line-height: 13px;
     letter-spacing: 2px;
     width: 90%;
+    max-width: 400px;
   }
   & div.list-for-mobile {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-top: 30px;
 
